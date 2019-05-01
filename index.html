@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- 
+ _                           _   _____ _ _           _           
+| |                         | | |  _  | (_)         (_)          
+| |     ___  ___  _ __   ___| | | | | | |___   _____ _ _ __ __ _ 
+| |    / _ \/ _ \| '_ \ / _ \ | | | | | | \ \ / / _ \ | '__/ _` |
+| |___|  __/ (_) | | | |  __/ | \ \_/ / | |\ V /  __/ | | | (_| |
+\_____/\___|\___/|_| |_|\___|_|  \___/|_|_| \_/ \___|_|_|  \__,_|
+                                                                 
+Front-end Developer: leoneloliver@gmail.com
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FoodTime APP" />
+    <meta name="keywords" content= "FoodTime" />
+    <title>FoodTime</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="FoodTime APP">
+    <meta name="msapplication-TileColor" content="#252525">
+    <meta name=theme-color content=#252525>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+    
+  </head>
+  
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <img src="images/logo.png" class="container__logo">
+        <button type="button" class="button__top open-modal"><i class="fa fa-bicycle" aria-hidden="true"></i><span>&nbsp;&nbsp;Become a Rider</span></button>
+      </div>
+    </div>
+    <div class="content__banner">
+      <div class="banner container">
+        <div>
+          <h1>
+            Your favourite restaurants,
+            delivered fast to your door.
+          </h1>
+          <p class="font--small">Enter your postalcode:</p>
+          <input type="text" name="search" class="search-box" placeholder="e.g. M4T 1K1"><button type="button" class="button open-modal"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div>
+              <!-- empty  -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="side-space">What's on the menu?</h1>
+        <ul class="flex-container">
+          <li class="flex-item flex1 open-modal">
+            <div class="cover burger">
+               Burgers
+              <div class="hover"></div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br>
+              <a href="#" class="description__link">See more</a>
+            </div>
+          </li>
+          <li class="flex-item flex2 open-modal">
+            <div class="cover salad">
+               Salads
+              <div class="hover"></div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br>
+              <a href="#" class="description__link">See more</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="flex-container">
+          <li class="flex-item flex2 open-modal">
+            <div class="cover pasta">
+               Pasta
+              <div class="hover"></div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br>
+              <a href="#" class="description__link">See more</a>
+            </div>
+          </li>
+          <li class="flex-item flex1 open-modal">
+            <div class="cover dessert">
+               Desserts
+              <div class="hover"></div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br>
+              <a href="#" class="description__link">See more</a>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="footer">
+      <div class="container">
+        Made with <span><i class="fa fa-heart" aria-hidden="true"></i></span> By Leonel Oliveira
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal__title">Member Login</h2>
+        <div>
+          <i class="fa fa-user modal__icon" aria-hidden="true"></i><input type="text" name="login" class="login-box" placeholder="Username">
+          <i class="fa fa-lock modal__icon" aria-hidden="true"></i><input type="password" name="password" class="login-box" placeholder="Password">
+          <button type="button" class="button__login">Sign In</button>
+          <hr>
+          <a class="modal__link">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
