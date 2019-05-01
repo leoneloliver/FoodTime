@@ -1,7 +1,5 @@
 // variables
-$primary-color: #02aaa7;
 $primary-color: #D70F64;
-// $primary-color: #E91431;
 $primary-color-darker: #089492;
 $secondary-color: #440063;
 $dark-color: #000;
@@ -10,14 +8,6 @@ $grey: #3a3a3a;
 $text-descripion: #2e3333;
 $dark-transparent: rgba(0,0,0, 0.2);
 
-
-// .topbar{
-//   height: 58px;
-//   background: $primary-color-darker;
-//   color: $clean-color;
-//   width: 100%;
-//   padding-top: 10px;
-// }
 .topbar {
   height: 58px;
   background: $dark-transparent;
@@ -33,7 +23,6 @@ $dark-transparent: rgba(0,0,0, 0.2);
    padding: 0px 20px;
   box-sizing: border-box;
   img{
-    // width: 160px;
     width: 162px;
     margin-top: -2px;
   }
@@ -208,7 +197,6 @@ input.search-box {
     color: $primary-color;
   }
 }
-
 
 .modal {
   display: none; /* Hidden by default */
