@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url(../images/banner.png);
+  background: url(https://commentform.marketforce.com/images/BK-WebComment/BB_WHOPPER-v1.png);
   background-repeat: no-repeat;
   background-position: right 55%;
   min-height: 375px;
@@ -46,7 +46,7 @@
   font-size: 2.2em;
 }
 
-.side-space {
+.side-space, .subtitle {
   padding: 0 10px;
 }
 
@@ -108,12 +108,12 @@ input.search-box, .login-box {
   display: flex;
 }
 
-.flex-item {
+.flex-item, .flex-mult-cols > * {
   padding: 10px;
   border: 5px transparent;
   color: #000;
 }
-.flex-item .cover {
+.flex-item .cover, .flex-mult-cols > * .cover {
   text-align: center;
   min-height: 200px;
   background: #000;
@@ -131,10 +131,10 @@ input.search-box, .login-box {
   flex-direction: column;
 }
 
-.flex-item {
+.flex-item, .flex-mult-cols > * {
   cursor: pointer;
 }
-.flex-item:hover .hover {
+.flex-item:hover .hover, .flex-mult-cols > :hover .hover {
   display: flex;
   position: absolute;
   height: 100%;
@@ -190,12 +190,41 @@ input.search-box, .login-box {
   background-size: cover !important;
 }
 
+
+.tacos{
+  background: url(../images/tacos.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.pizza{
+  background: url(../images/pizza.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.sushi{
+  background: url(../images/sushi.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.grilled{
+  background: url(../images/grilled.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.section {
+  background: #ececec;
+  padding-bottom: 20px;
+}
+
 .footer {
   background: #000;
   height: 80px;
   color: #fff;
   line-height: 80px;
-  margin-top: 50px;
   text-align: center;
 }
 .footer span {
@@ -273,6 +302,22 @@ input.search-box, .login-box {
   color: #d70f64;
 }
 
+.subtitle {
+  padding: 0 10px;
+  font-size: 2.0em;
+  padding-top: 22px;
+}
+
+.flex-mult-cols {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-mult-cols > * {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 @media screen and (max-width: 1280px) {
   .container {
     width: 100%;
@@ -306,6 +351,14 @@ input.search-box, .login-box {
   .modal-content {
     width: 80%;
   }
+
+  .flex-container.section {
+    display: block;
+  }
+
+  .flex-mult-cols > * {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 530px) {
   .banner {
@@ -315,6 +368,10 @@ input.search-box, .login-box {
   .banner h1 {
     font-size: 2em;
     text-shadow: none;
+  }
+
+  .flex-mult-cols > * {
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -336,3 +393,4 @@ input.search-box, .login-box {
     display: none;
   }
 }
+

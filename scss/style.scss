@@ -1,5 +1,8 @@
+
 // variables
+$primary-color: #02aaa7;
 $primary-color: #D70F64;
+// $primary-color: #E91431;
 $primary-color-darker: #089492;
 $secondary-color: #440063;
 $dark-color: #000;
@@ -7,7 +10,16 @@ $clean-color: #fff;
 $grey: #3a3a3a;
 $text-descripion: #2e3333;
 $dark-transparent: rgba(0,0,0, 0.2);
+$extra-color: #ececec;
 
+
+// .topbar{
+//   height: 58px;
+//   background: $primary-color-darker;
+//   color: $clean-color;
+//   width: 100%;
+//   padding-top: 10px;
+// }
 .topbar {
   height: 58px;
   background: $dark-transparent;
@@ -23,6 +35,7 @@ $dark-transparent: rgba(0,0,0, 0.2);
    padding: 0px 20px;
   box-sizing: border-box;
   img{
+    // width: 160px;
     width: 162px;
     margin-top: -2px;
   }
@@ -40,7 +53,7 @@ $dark-transparent: rgba(0,0,0, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url(../images/banner.png);
+  background: url(https://commentform.marketforce.com/images/BK-WebComment/BB_WHOPPER-v1.png);
   background-repeat: no-repeat;
   background-position: right 55%;
   min-height: 375px;
@@ -148,6 +161,7 @@ input.search-box {
     transition: all .3s ease;
   }
 }
+
 .description{
   color: $text-descripion;
 }
@@ -162,6 +176,7 @@ input.search-box {
 
 .flex1 { flex: 1 1 12em;}
 .flex2 { flex: 2 2 12em;} 
+
 
 .salad {
   background: url(../images/salad.jpg) !important;
@@ -186,17 +201,48 @@ input.search-box {
   background-position: center !important;
   background-size: cover !important;
 }
+
+
+.tacos{
+  background: url(../images/tacos.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.pizza{
+  background: url(../images/pizza.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.sushi{
+  background: url(../images/sushi.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.grilled{
+  background: url(../images/grilled.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+
+.section{
+  background: $extra-color;
+  padding-bottom: 20px;
+}
 .footer{
   background: $dark-color;
   height: 80px;
   color: $clean-color;
   line-height: 80px;
-  margin-top: 50px;
   text-align: center;
   span{
     color: $primary-color;
   }
 }
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -257,6 +303,29 @@ input.search-box {
   margin-left: 8px;
   color: #d70f64;
 }
+.subtitle{
+  @extend .side-space;
+  padding: 0 10px;
+  font-size: 2.0em;
+  padding-top: 22px;
+}
+@mixin flex-grid-items($cols) {
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    @extend .flex-item;
+    $item-width: 100% / $cols;
+    width: $item-width;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}
+
+.flex-mult-cols {
+  @include flex-grid-items(4);
+}
+
+
 @media screen and (max-width: 1280px) {
   .container {
     width: 100%;
@@ -284,6 +353,12 @@ input.search-box {
   .modal-content {
     width: 80%;
   }
+  .flex-container.section{
+    display: block;
+  }
+  .flex-mult-cols > *{
+    width: 50%;
+  }
 }
 @media screen and (max-width: 530px) {
   .banner {
@@ -294,6 +369,9 @@ input.search-box {
       text-shadow: none;
     }
   } 
+  .flex-mult-cols > *{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -315,3 +393,4 @@ input.search-box {
     display: none;
   }
 }
+
